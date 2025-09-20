@@ -1,0 +1,2911 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='defects_data' inline='true' name='federated.15srazo0jer3981d3eldl0pzz4zy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='defects_data' name='textscan.0gb8pcs1m22mhz18wn3oe0hdy94v'>
+            <connection class='textscan' directory='D:/python/project/dashboard' filename='defects_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0gb8pcs1m22mhz18wn3oe0hdy94v' name='defects_data.csv' table='[defects_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='defect_id' ordinal='0' />
+            <column datatype='integer' name='product_id' ordinal='1' />
+            <column datatype='string' name='defect_type' ordinal='2' />
+            <column datatype='date' name='defect_date' ordinal='3' />
+            <column datatype='string' name='defect_location' ordinal='4' />
+            <column datatype='string' name='severity' ordinal='5' />
+            <column datatype='string' name='inspection_method' ordinal='6' />
+            <column datatype='real' name='repair_cost' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defect_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[defect_id]</local-name>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias>defect_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[product_id]</local-name>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias>product_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defect_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[defect_type]</local-name>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias>defect_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defect_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[defect_date]</local-name>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias>defect_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defect_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[defect_location]</local-name>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias>defect_location</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[severity]</local-name>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias>severity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inspection_method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[inspection_method]</local-name>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias>inspection_method</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>repair_cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[repair_cost]</local-name>
+            <parent-name>[defects_data.csv]</parent-name>
+            <remote-alias>repair_cost</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Defects' datatype='integer' name='[Calculation_1470143810277568512]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([defect_id])' />
+      </column>
+      <column caption='Total Repair Cost' datatype='real' name='[Calculation_1470143810277720065]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([repair_cost])' />
+      </column>
+      <column caption='Average Repair Cost' datatype='real' name='[Calculation_1470143810277834754]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([repair_cost])' />
+      </column>
+      <column caption='Critical Defects %' datatype='real' datatype-customized='true' default-format='p0.00%' name='[Calculation_1470143810277924867]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM( IF [severity] = &quot;Critical&quot; THEN 1 ELSE 0 END )&#13;&#10;/&#13;&#10;COUNT([defect_id])' />
+      </column>
+      <column caption='AVG(1)' datatype='real' name='[Calculation_1470143810290655242]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(1)' />
+      </column>
+      <column caption='defects_data.csv' datatype='table' name='[__tableau_internal_object_id__].[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]' role='measure' type='quantitative' />
+      <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+      <column caption='Defect Id' datatype='integer' name='[defect_id]' role='dimension' type='ordinal' />
+      <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+      <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+      <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+      <column caption='Product Id' datatype='integer' name='[product_id]' role='dimension' type='ordinal' />
+      <column caption='Repair Cost' datatype='real' name='[repair_cost]' role='measure' type='quantitative' />
+      <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+      <column-instance column='[defect_id]' derivation='Count' name='[cnt:defect_id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+      <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+      <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[defect_id]' derivation='Count' name='[pcto:cnt:defect_id:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance aggregation-param='5' column='[defect_id]' derivation='Percentile' name='[pcto:prc5:defect_id:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_1470143810290655242]' derivation='User' name='[usr:Calculation_1470143810290655242:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Defect Location)' hidden='true' name='[Action (Defect Location)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[defect_location]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Defect Type)' hidden='true' name='[Action (Defect Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[defect_type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Inspection Method)' hidden='true' name='[Action (Inspection Method)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[inspection_method]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Severity)' hidden='true' name='[Action (Severity)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[severity]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/asus/AppData/Local/Temp/TableauTemp/#TableauTemp_1wxbfji1rbi9jk146h4je1p6emdu.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/02/2026 07:06:25 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>defect_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[defect_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>defect_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>defects_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[product_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>defects_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>defect_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[defect_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>defect_type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>defects_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>defect_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[defect_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>defect_date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>defects_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>defect_location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[defect_location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>defect_location</remote-alias>
+              <ordinal>4</ordinal>
+              <family>defects_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>severity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>severity</remote-alias>
+              <ordinal>5</ordinal>
+              <family>defects_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>inspection_method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[inspection_method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>inspection_method</remote-alias>
+              <ordinal>6</ordinal>
+              <family>defects_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>repair_cost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[repair_cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>repair_cost</remote-alias>
+              <ordinal>7</ordinal>
+              <family>defects_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>996</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:defect_location:nk]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;Surface&quot;</bucket>
+            </map>
+            <map to='#f26250'>
+              <bucket>&quot;Internal&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;Component&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:severity:nk]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;Moderate&quot;</bucket>
+            </map>
+            <map to='#f26250'>
+              <bucket>&quot;Minor&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;Critical&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='red_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810290655242:qk]&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[pcto:cnt:defect_id:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[pcto:prc5:defect_id:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:inspection_method:nk]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;Visual Inspection&quot;</bucket>
+            </map>
+            <map to='#f26250'>
+              <bucket>&quot;Manual Testing&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;Automated Testing&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:defect_type:nk]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;Structural&quot;</bucket>
+            </map>
+            <map to='#f26250'>
+              <bucket>&quot;Functional&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;Cosmetic&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='defects_data.csv' id='defects_data.csv_C8D837EC53124E8EABC2EF3EFA32DEC5'>
+            <properties context=''>
+              <relation connection='textscan.0gb8pcs1m22mhz18wn3oe0hdy94v' name='defects_data.csv' table='[defects_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='defect_id' ordinal='0' />
+                  <column datatype='integer' name='product_id' ordinal='1' />
+                  <column datatype='string' name='defect_type' ordinal='2' />
+                  <column datatype='date' name='defect_date' ordinal='3' />
+                  <column datatype='string' name='defect_location' ordinal='4' />
+                  <column datatype='string' name='severity' ordinal='5' />
+                  <column datatype='string' name='inspection_method' ordinal='6' />
+                  <column datatype='real' name='repair_cost' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.15srazo0jer3981d3eldl0pzz4zy'>
+      <datasources>
+        <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+      </datasources>
+      <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+        <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+        <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+        <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+        <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+        <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+        <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+        <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+        <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]'>
+        <groupfilter function='level-members' level='[mn:defect_date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]'>
+        <groupfilter function='level-members' level='[none:defect_location:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]'>
+        <groupfilter function='level-members' level='[none:defect_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]'>
+        <groupfilter function='level-members' level='[none:inspection_method:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]'>
+        <groupfilter function='level-members' level='[none:severity:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter1' name='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Defects Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a73b28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+            <column-instance column='[defect_id]' derivation='Count' name='[cnt:defect_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+            <column caption='Defect Id' datatype='integer' name='[defect_id]' role='dimension' type='ordinal' />
+            <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+            <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+            <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+            <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+            <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+            <column-instance column='[defect_date]' derivation='Month-Trunc' name='[tmn:defect_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]'>
+            <groupfilter function='level-members' level='[defect_location]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]'>
+            <groupfilter function='level-members' level='[defect_type]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]'>
+            <groupfilter function='level-members' level='[inspection_method]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]'>
+            <groupfilter function='level-members' level='[severity]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' value='#a73b28' />
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ff9d9a' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]' value='#a73b28' />
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]' value='#a73b28' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]' value='#a73b28' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]' value='#a73b28' />
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#7f3134'>&lt;</run>
+                <run fontcolor='#7f3134'>[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]</run>
+                <run fontcolor='#7f3134'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#a73b28' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]</rows>
+        <cols>[federated.15srazo0jer3981d3eldl0pzz4zy].[tmn:defect_date:qk]</cols>
+      </table>
+      <simple-id uuid='{178D1C84-FF01-41A7-9449-ACD67455ADB4}' />
+    </worksheet>
+    <worksheet name='Defects by Location'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a73b28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+            <column-instance column='[defect_id]' derivation='Count' name='[cnt:defect_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+            <column caption='Defect Id' datatype='integer' name='[defect_id]' role='dimension' type='ordinal' />
+            <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+            <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+            <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+            <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+            <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]'>
+            <groupfilter function='level-members' level='[defect_type]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]'>
+            <groupfilter function='level-members' level='[inspection_method]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]'>
+            <groupfilter function='level-members' level='[severity]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#b54648' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#b54648' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#b54648' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]' id='legend-color' value='#a73b28' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]' id='legend-color' value='#a73b28' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#b54648' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]' />
+              <wedge-size column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+              <size column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]' />
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#7f3134' fontsize='11'><![CDATA[<[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#7f3134' fontsize='10'><![CDATA[<[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='size' value='1.5932043790817261' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4B7250E8-5144-4A6B-A283-29A942902C17}' />
+    </worksheet>
+    <worksheet name='Defects by Severity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a73b28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+            <column-instance column='[defect_id]' derivation='Count' name='[cnt:defect_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+            <column caption='Defect Id' datatype='integer' name='[defect_id]' role='dimension' type='ordinal' />
+            <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+            <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+            <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+            <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+            <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]'>
+            <groupfilter function='level-members' level='[defect_location]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]'>
+            <groupfilter function='level-members' level='[defect_type]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]'>
+            <groupfilter function='level-members' level='[inspection_method]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='display' class='0' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#f28e2b' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' value='#a73b28' />
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#a0cbe8' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]' />
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#cf0000'>&lt;</run>
+                <run fontcolor='#cf0000'>[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]</run>
+                <run fontcolor='#cf0000'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#b54648' />
+                <format attr='font-family' value='Tableau Semibold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]</rows>
+        <cols>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]</cols>
+      </table>
+      <simple-id uuid='{4377B2E4-4472-4E8B-9285-B6478CFF01BC}' />
+    </worksheet>
+    <worksheet name='Defects by Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a73b28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+            <column-instance column='[defect_id]' derivation='Count' name='[cnt:defect_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+            <column caption='Defect Id' datatype='integer' name='[defect_id]' role='dimension' type='ordinal' />
+            <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+            <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+            <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+            <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+            <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]'>
+            <groupfilter function='level-members' level='[defect_location]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]'>
+            <groupfilter function='level-members' level='[inspection_method]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]'>
+            <groupfilter function='level-members' level='[severity]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='display' class='0' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]' id='legend-color' value='#a0cbe8' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]' id='legend-color' value='#a0cbe8' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#a0cbe8' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#a0cbe8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.38381215929985046' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+              <color column='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.3513259887695312' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk] + [federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk])</rows>
+        <cols>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</cols>
+      </table>
+      <simple-id uuid='{7C507DFD-5CF5-4440-95BA-54E5750AFD46}' />
+    </worksheet>
+    <worksheet name='Inspection Method'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a73b28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+            <column caption='avg(1)' datatype='real' name='[Calculation_1470143810285236231]' role='measure' type='quantitative' user:unnamed='Inspection Method'>
+              <calculation class='tableau' formula='avg(1)' />
+            </column>
+            <column-instance column='[defect_id]' derivation='Count' name='[cnt:defect_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+            <column caption='Defect Id' datatype='integer' name='[defect_id]' role='dimension' type='ordinal' />
+            <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+            <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+            <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+            <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+            <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1470143810285236231]' derivation='User' name='[usr:Calculation_1470143810285236231:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]'>
+            <groupfilter function='level-members' level='[defect_location]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]'>
+            <groupfilter function='level-members' level='[defect_type]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]'>
+            <groupfilter function='level-members' level='[severity]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810285236231:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <encoding attr='space' class='0' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810285236231:qk]' field-type='quantitative' major-origin='0.5' major-spacing='0.10000000000000001' max='1.1200000000000001' min='0.90000000000000002' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810285236231:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810285236231:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#a0cbe8' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#a0cbe8' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' value='Count of Defect Id'>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759'>Count of Defect Id</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#7f3134'><![CDATA[<[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#7f3134'><![CDATA[<[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810285236231:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]' />
+              <wedge-size column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+              <size column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]' />
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#7f3134'><![CDATA[<[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#7f3134'><![CDATA[<[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.022099494934082' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810285236231:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#7f3134'><![CDATA[<[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#7f3134'><![CDATA[<[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2853591442108154' />
+                <format attr='mark-color' value='#fddfd7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810285236231:qk] + [federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810285236231:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{31DEFBD6-7C02-4EA4-82E2-060548808143}' />
+    </worksheet>
+    <worksheet name='KPI '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+            <column caption='Total Defects' datatype='integer' name='[Calculation_1470143810277568512]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([defect_id])' />
+            </column>
+            <column caption='Total Repair Cost' datatype='real' name='[Calculation_1470143810277720065]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([repair_cost])' />
+            </column>
+            <column caption='Average Repair Cost' datatype='real' name='[Calculation_1470143810277834754]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([repair_cost])' />
+            </column>
+            <column caption='Critical Defects %' datatype='real' datatype-customized='true' default-format='p0.00%' name='[Calculation_1470143810277924867]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM( IF [severity] = &quot;Critical&quot; THEN 1 ELSE 0 END )&#13;&#10;/&#13;&#10;COUNT([defect_id])' />
+            </column>
+            <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+            <column caption='Defect Id' datatype='integer' name='[defect_id]' role='dimension' type='ordinal' />
+            <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+            <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+            <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+            <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+            <column caption='Repair Cost' datatype='real' name='[repair_cost]' role='measure' type='quantitative' />
+            <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1470143810277568512]' derivation='User' name='[usr:Calculation_1470143810277568512:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1470143810277720065]' derivation='User' name='[usr:Calculation_1470143810277720065:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1470143810277834754]' derivation='User' name='[usr:Calculation_1470143810277834754:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1470143810277924867]' derivation='User' name='[usr:Calculation_1470143810277924867:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810277834754:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810277924867:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810277568512:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810277720065:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810277568512:qk]&quot;</bucket>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810277720065:qk]&quot;</bucket>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810277834754:qk]&quot;</bucket>
+              <bucket>&quot;[federated.15srazo0jer3981d3eldl0pzz4zy].[usr:Calculation_1470143810277924867:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]'>
+            <groupfilter function='level-members' level='[defect_location]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]'>
+            <groupfilter function='level-members' level='[defect_type]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]'>
+            <groupfilter function='level-members' level='[inspection_method]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]'>
+            <groupfilter function='level-members' level='[severity]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' value='#4e79a7' />
+            <format attr='color' data-class='subtotal' scope='rows' value='#a73b28' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='total' value='#a73b28' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#a73b28' />
+            <format attr='font-family' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]' value='Tableau Semibold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#a73b28' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-family' value='Tableau Semibold' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#b54648' fontname='Tableau Semibold' fontsize='15'>&lt;</run>
+                <run fontcolor='#b54648' fontname='Tableau Semibold' fontsize='15'>[federated.15srazo0jer3981d3eldl0pzz4zy].[Multiple Values]</run>
+                <run fontcolor='#b54648' fontname='Tableau Semibold' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{94D0E914-B4B2-45DF-94C5-9EAA9A4A41ED}' />
+    </worksheet>
+    <worksheet name='Repair Cost by Defect Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#a73b28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+            <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+            <column caption='Defect Location' datatype='string' name='[defect_location]' role='dimension' type='nominal' />
+            <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+            <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+            <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[defect_location]' derivation='None' name='[none:defect_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity]' derivation='None' name='[none:severity:nk]' pivot='key' type='nominal' />
+            <column caption='Repair Cost' datatype='real' name='[repair_cost]' role='measure' type='quantitative' />
+            <column caption='Severity' datatype='string' name='[severity]' role='dimension' type='nominal' />
+            <column-instance column='[repair_cost]' derivation='Sum' name='[sum:repair_cost:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]'>
+            <groupfilter function='level-members' level='[defect_location]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]'>
+            <groupfilter function='level-members' level='[defect_type]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]'>
+            <groupfilter function='level-members' level='[inspection_method]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]'>
+            <groupfilter function='level-members' level='[severity]' user:ui-action-filter='[Action1_5DA5E3C9FDD04A1AA8858DD7DC694D45]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.15srazo0jer3981d3eldl0pzz4zy].[sum:repair_cost:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Location)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Severity)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Inspection Method)]</column>
+            <column>[federated.15srazo0jer3981d3eldl0pzz4zy].[Action (Defect Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#a73b28' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#a0cbe8' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]' id='legend-color' value='#a0cbe8' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]' />
+              <text column='[federated.15srazo0jer3981d3eldl0pzz4zy].[sum:repair_cost:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#cf0000'>&lt;</run>
+                <run fontcolor='#cf0000'>[federated.15srazo0jer3981d3eldl0pzz4zy].[sum:repair_cost:qk]</run>
+                <run fontcolor='#cf0000'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]</rows>
+        <cols>[federated.15srazo0jer3981d3eldl0pzz4zy].[sum:repair_cost:qk]</cols>
+      </table>
+      <simple-id uuid='{1BA90A78-5DCD-4BCA-9DF0-AFF5477B580B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='900' maxwidth='1580' minheight='900' minwidth='1580' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='defects_data' name='federated.15srazo0jer3981d3eldl0pzz4zy' />
+      </datasources>
+      <datasource-dependencies datasource='federated.15srazo0jer3981d3eldl0pzz4zy'>
+        <column caption='Defect Date' datatype='date' name='[defect_date]' role='dimension' type='ordinal' />
+        <column caption='Defect Type' datatype='string' name='[defect_type]' role='dimension' type='nominal' />
+        <column caption='Inspection Method' datatype='string' name='[inspection_method]' role='dimension' type='nominal' />
+        <column-instance column='[defect_date]' derivation='Month' name='[mn:defect_date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[defect_type]' derivation='None' name='[none:defect_type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[inspection_method]' derivation='None' name='[none:inspection_method:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='26' is-scaled='1' param='D:/python/project/dashboard/image/Presentation6.png' type-v2='bitmap' w='98988' x='506' y='889'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='14000' id='7' name='KPI ' show-title='false' w='63797' x='1392' y='19333' />
+        <zone h='35222' id='8' name='Defects by Type' w='26899' x='68228' y='24111' />
+        <zone h='28111' id='10' name='Defects by Severity' w='28671' x='3481' y='35333' />
+        <zone h='27222' id='12' name='Defects Over Time' w='29873' x='34620' y='67667' />
+        <zone h='21778' id='14' name='Repair Cost by Defect Type' w='29873' x='2785' y='70000' />
+        <zone h='30333' id='16' name='Inspection Method' w='25443' x='68544' y='64333' />
+        <zone h='6889' id='20' mode='checkdropdown' name='Defects Over Time' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]' type-v2='filter' values='database' w='10570' x='86519' y='13889' />
+        <zone h='6000' id='21' mode='dropdown' name='Defects Over Time' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]' type-v2='filter' values='database' w='10127' x='86709' y='7000' />
+        <zone h='12889' id='23' mode='checklist' name='Defects Over Time' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]' type-v2='filter' values='database' w='10127' x='74937' y='7444' />
+        <zone h='24222' id='28' name='Defects by Location' w='27658' x='36013' y='36889' />
+        <zone forceUpdate='true' h='8667' id='30' type-v2='text' w='48544' x='11646' y='4889'>
+          <formatted-text>
+            <run bold='true' fontcolor='#a73b28' fontname='Tableau Semibold' fontsize='22'>MANUFACTURING DEFECTS DASHBOARD</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='3444' id='47' type-v2='text' w='43608' x='12089' y='11667'>
+          <formatted-text>
+            <run fontcolor='#cf0000' fontsize='11'>Analysis of Defect Trends,Cost and Inspection Performance - 2024</run>
+          </formatted-text>
+        </zone>
+        <zone h='14222' id='55' is-centered='0' is-scaled='1' param='C:/Users/asus/OneDrive/Pictures/Screenshots/Screenshot 2025-11-20 190926.png' type-v2='bitmap' w='10316' x='64810' y='5889' />
+        <zone h='8889' id='56' is-scaled='1' param='C:/Users/asus/Downloads/Screenshot_2025-11-20_190914-removebg-preview.png' type-v2='bitmap' w='10633' x='1456' y='6444' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2500' minheight='2500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='82' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='81' param='vert' type-v2='layout-flow' w='98988' x='506' y='889'>
+                <zone fixed-size='280' h='98222' id='26' is-fixed='true' is-scaled='1' param='D:/python/project/dashboard/image/Presentation6.png' type-v2='bitmap' w='98988' x='506' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8667' id='30' type-v2='text' w='48544' x='11646' y='4889'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#a73b28' fontname='Tableau Semibold' fontsize='22'>MANUFACTURING DEFECTS DASHBOARD</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='128' h='14222' id='55' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/asus/OneDrive/Pictures/Screenshots/Screenshot 2025-11-20 190926.png' type-v2='bitmap' w='10316' x='64810' y='5889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='80' h='8889' id='56' is-fixed='true' is-scaled='1' param='C:/Users/asus/Downloads/Screenshot_2025-11-20_190914-removebg-preview.png' type-v2='bitmap' w='10633' x='1456' y='6444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3444' id='47' type-v2='text' w='43608' x='12089' y='11667'>
+                  <formatted-text>
+                    <run fontcolor='#cf0000' fontsize='11'>Analysis of Defect Trends,Cost and Inspection Performance - 2024</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='126' h='14000' id='7' is-fixed='true' name='KPI ' show-title='false' w='63797' x='1392' y='19333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35222' id='8' is-fixed='true' name='Defects by Type' w='26899' x='68228' y='24111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='253' h='28111' id='10' is-fixed='true' name='Defects by Severity' w='28671' x='3481' y='35333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='218' h='24222' id='28' is-fixed='true' name='Defects by Location' w='27658' x='36013' y='36889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='30333' id='16' is-fixed='true' name='Inspection Method' w='25443' x='68544' y='64333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6889' id='20' mode='checkdropdown' name='Defects Over Time' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]' type-v2='filter' values='database' w='10570' x='86519' y='13889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6000' id='21' mode='dropdown' name='Defects Over Time' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[mn:defect_date:ok]' type-v2='filter' values='database' w='10127' x='86709' y='7000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12889' id='23' mode='checkdropdown' name='Defects Over Time' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]' type-v2='filter' values='database' w='10127' x='74937' y='7444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='27222' id='12' is-fixed='true' name='Defects Over Time' w='29873' x='34620' y='67667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='196' h='21778' id='14' is-fixed='true' name='Repair Cost by Defect Type' w='29873' x='2785' y='70000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B83CA4BD-1239-4FD9-A65E-15F10B9A19F9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='KPI '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6214A7E3-BD19-49C3-8153-FE55BCF8C71C}' />
+    </window>
+    <window class='worksheet' name='Defects by Severity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:severity:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E670E173-2308-40F2-81FA-5765367DD6BF}' />
+    </window>
+    <window class='worksheet' name='Defects by Location'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_location:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9AF35BC4-D4F3-4314-B21F-DB9B8DAEF9D6}' />
+    </window>
+    <window class='worksheet' name='Defects by Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{35C406EB-CE62-4DAA-8704-7F55FEEFCAF4}' />
+    </window>
+    <window class='worksheet' name='Repair Cost by Defect Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:defect_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{70681D32-500E-4DD8-87AD-A575D5FC374E}' />
+    </window>
+    <window class='worksheet' name='Defects Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{30E10A3E-05AB-4AE6-9EA9-BED0C8BEDEDA}' />
+    </window>
+    <window class='worksheet' name='Inspection Method'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[none:inspection_method:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.15srazo0jer3981d3eldl0pzz4zy].[cnt:defect_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5A463031-CBE7-4A04-87AC-60246912B131}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Defects Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Defects by Location'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Defects by Severity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Defects by Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Inspection Method'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Repair Cost by Defect Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{721DC75A-EE8A-4E79-8BA7-6FA5FD1FF95B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      lGYwr8ii6Mfgp03wPDwhqMKA+Q1YBVeBotqwJGxhr4JxyZdQL4jaWTpjZegKUSy0MHyDURmb
+      KBqFZ+UbOMoAHCUjgpnHAphgHMLwjYQCBos5rwNHS3HdGsjfBVC60gCmCIkjTLzc1FDHs5vW
+      mNyM1zkJ1+G9N72FNXvbGLDh3tc/8XHuvuc9v2vWXnN64N++xKe+/DWyQqOUJgM8+qXPc8Pt
+      b/pds/aa0z/83acqQ6AqHJLaJ2U9VhCrvv7JeIcqJA4+gxb/azgyyuuVfG3i9pCdLYUQF0Tf
+      TRRRRimU3ZarBCu7ECiACRWUEBQvBFIY+NIA4s10fbQd+dcflb+nAUy8Jiw2wG+SC3R8w8sc
+      WbuKoy+/ZKsXl6j/2NER1w+d6qRzx1bz7IF+jqxdRefObTatuJLaV73A4ZdWnPHZA8ePvaoC
+      WwUhDMqlMMiLZ7KBfCrFkbWrOLJ2FR3bt1T8ppTPwInjI+45vWdn8fv+Y0c4snYV3QfaXhH8
+      1P5nn0TrkYmJXfv20P7i8xSyZy7vONR5Ej8/eklFsNuNGCfgDvP8/ceO0LFt8znz+Uqo7/Ah
+      jqxdRc+hA+d8j9aK/c8+OdoPdO7cxuGXVqAKZ9begRPHi5WsR7yoc+wWk8HEfeXKlEsl2f6j
+      75EdHET7iiNrV3Fq9w4yfb2sve9f6WrbTaqnm0MrfkXfkXZS3afpatttGDt+lEMvPMvJLRtZ
+      //WvoJXi6NqX6GrbTbLrFLt/+VMS4ybQf/Qw7S8+j5/PkR0c4OALz9B7+BAvf/ULdO7YSm5o
+      kEMrn6Pv8KFXxLuvYRBFhmA3aHTSSpHqOs2uRx6mkE6TT6U4tOJXDBw/Sv+Rw6x/4Iv0Hz1M
+      39HDHHzhWVI93XQfaCN5yhwoObZuNV17drHzpw/RsX0Lqe4uDr7wLNnBQQaOH+XU7h2c2r0D
+      5fscW7+Go+vWoJVCOg75dJqBE8foOWBKP57YvIHdv/wpwnEoZNJ0te3m8OqVKL9g5LnyOZKn
+      O9n4ra9ZpzT6vO7ZDYis1na3rkS7HnmYXY88TD6doufAPpTy6Tm0Hz+X4/BLK+g9dIB8Klnk
+      q7zfqpDn2Lo1nNq9Ez+X5fSenRxdt7roqA6vXknP/ja2PfQdTu/ZxWDHSQ6t+BX5dJq+w4fo
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Defects by Location' width='192'>
+      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
+      UQDE1v4PMQKVbGoqLgkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Defects by Severity' width='184'>
+      iVBORw0KGgoAAAANSUhEUgAAALgAAADACAYAAAC3QqlrAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAPxUlEQVR4nO3de1SVZb7A8e+GDRs2tw0IbEBFDBQCMpq8pelYmZOZZo1NTZ4uas0qOSWn
+      i02n1jhTdj9py6lJpzpTs0qt03gpLbFylMy8i6KIoFxU2NxBbhv25T1/cBGSFLnq0++zlmvJ
+      3s9+9wN+fXnfF30fnaZpGkIoyqW/JyBEb5LAhdIkcKE0CVwoTQIXSpPAhdIkcKE0CVwoTQIX
+      SpPAhdIkcKE0CVwoTd/fE7hUOW02clPWk/X5JzRUlmMwBTBo0hSiZ96Dm7dPv83LXlfLluS5
+      AExa8j56oxea04m1ogy9hyduXt79NrdLkezBO+C02dj1ynPseeMvGEz+BCeOwmDyJ/2Dt8n8
+      9MN+nZtOryd09PWEjr4enb5p/2QtLyVl3iwyV/+jX+d2KZI9eAcqj2dyevsWrnnsGaJm3tP6
+      uL2+jlpLwTnjbbU1uOj1uBo8uvR+mtOJTqcDne6CY13dDcTPmd+l9/klkj14BzSHAzTtnEMR
+      vacRv8io1o/Ljhxkw92/4fMpI/m/yb8ideGjNFRVApDx8XukzP0t9aXFreMba6rZsmAOae++
+      CTR9p9j31kt8dmMi/7plNCe3bILmf55fcSyDlHmzqDiWQeGP21h/xyS2P58MwJ43/kzqM/Ox
+      W+sp+GErKfNmYS0rJfPTj1h/xyQ23nsrFZmH2f3an/j20dk0VFW0zqGhqoJvH51Nxsfv9c4X
+      7xIjgXfAJ2Io3uGD2P36Ig69v4z6spJzxtQVFbLjL08REBPPHV/t5JZ/fkH16Xz2LV2M5nAQ
+      fPVIqk/nU3Jwb+trKrOPUn40naAR1wKQ8cl75KV8wYRX32H43Q+y+/U/UXbkIABOWyP1ZSWU
+      pO3hxxcW4uLuzoCERAAaqiqxVpSB04npimFc+R8P4+blRcivxnDVH5KJn5OE0RxG2NgJlB87
+      TOnBfa1zKDtyiKrcbIKvHtmbX8JLhgTeAXdvH8a9sBS/IVdw5MN3WT/z12x6cCaW3T+07mEL
+      d23H2djIiEefxN3HF9+IoQz/3QMU7dlBbeFp/CKj8I0YimXn9tbXFO/biYcpgMDYeBrPVHHy
+      u01E33kv5lHjiL7j9xiDzOR/u7F1Ho4GK0c+Wk7CvMeYtvJrht913zlzNYaEMnDiZFw9PDFd
+      MYwhU6Yz+MZbMPj5E5Q4Ct/BkZzYuKbpuxJwettmTEOHYbpieB98JfufBP4zvMMHM3nFaqav
+      +Tfxc5NoqKpk29OPkLf5SwDKj6Th4u5O4c7vyd20ntxN66kvKQKaDgP0Ri9CR4+nJG0PDVUV
+      2OtqKdz5PcGJIzGYAqgrKaK+tIjGM1XkblpPwY6tuBoM1JUUt5tH3AOPEHX73Z06Pv8pd28f
+      Im66ldKDe6nKPU5DZTnF+3cTdt1EXD26dr5wuZGTzAvwDAwi7v5HiL5zNlv/ax5Za1YRPuEm
+      7FYrdUUW0j/4a9MJYjN3Xz9c3NwBCB19PdlrVlF5/BjuviZqC04R98CjQNMhiNPhIG/zl5za
+      9k3r6/2HXdn6e1eDBwEx8V2Ku8XAiZPJXP0hlp2p+EZGY2+wMnDC5C5v73IjgXfAVlONi5tb
+      u6si7l7eeAaFNJ00Op0ExCZQkraHm95diTHY3OF2/CKj8AobSMH2LRjN4bh5eRMYGw+AlzkM
+      D1MAETdPI35OUq99Lt5hgwgdM4G8bzbgHT6YgJh4vELDe+39LjVyiNIBy+7tbLjnFo6u+l/O
+      5B6n1lLA0ZUfULgzlaAR16I3ehFyzSgcDQ3sW7qY+rISNKeT6vwc9i1dTHnGIYDWwxTL7h/I
+      /2ZD6+EJgMHPn+BrRnPss39yautmbLU15H2zgQPvvHHR83UzemEMNnP6+y1UHj9GXbEFe11t
+      05M6HUNumcGZ/BxObd1MxORb0bm69tjX6lIne/AODIhPxH/YlRxcvpQDf30NABc3d6Jm3EXC
+      3Ka9rSkqhjHPv8Kul59j3YwJAOhcXAm5dgyeA4JbtxU6+noyV3+Io8FK3INtrl/rdCT+50Ls
+      9XVsfz4ZzenAYAog4aHHLnq+eqMXsbMfYtfiP/L1/TNw8/Lm12++R2DcCAACYxIIjEmgrrSo
+      9QrOL4VO7ovy81p+BI6mYfDzx8XNrYNBGtbKcjSHo8MxrdsAPPwD0bmc+03T0WDF0dCAu69f
+      t+brtNloqKrA1d3QbltOm43UZ+ZjDA5h5MIXuvUelxvZg5+HzsUFz8CgCwzS4eEf2K1tuBo8
+      uvxT0LZc3Nzaffdo+ct18ruvKD+a/ov8CagErjBreSkpD92FrbaGxKSFBF55VX9Pqc/JIYpQ
+      mlxFEUqTwIXSJHChNAlcKE0CF0qTwIXSJHChNAlcKE0CF0qTwIXSJHChNAlcKE0CF0qTwIXS
+      JHChNAlcKE0CF0qTwIXSJHChNAlcKE0CF0qTwIXSJHChNAlcKE0CF0qTwIXSJHChNAlcKE0C
+      F0qTwIXSJHChNAlcKE1WeOgVVhr3fk7pO6uo+iEbJ0DY1fgnLcY8c+jZvUpRCoWLv8TW9qVh
+      0wh95mbcmrfTsOldCl9bTm0BEDaewKf/SPCUobJn6iRZ4aFXfEWubiqVxhDcBvsDdpz52Tjq
+      jHgu2cuwBTHoADYnkXbz27T7Axi7hJgfFuCBnfqlN3IseRuERKH310NFPrYi2m9DnJ8mekGW
+      VvV1pma3tXmofJ12woy23/yUdqb5IeuyCdp+zFp+akfbSNFyjWj7x76u1bVsx5ahFYxF22+c
+      r1X26vzVIYcovSIK3yk/ecjHjJsfEBBGy0KDjfnHgGG4DzzPpmKG4dHyp6SPwiMGSOvh6SpM
+      DuV6jR1HqQWbxUJ96t/JHzeF0pOJBL58P00LBlbTmG8Byql+8zGK16VirbG3ef0kghdPQLd6
+      Efkf76XBkkPtxwuwrDbiuTgJ3375nC4/cgzea7KxXBeNZUfzh1EPMCjlbwRGtqyHmUvRxEgK
+      t7V5iTEav4/+TeSdYc0PVFL1zA3kvbq/6USVARgWfkL0K5Pl6kAnyR6814Tg9+JaItauZdCS
+      x/AyrOVk/FUc/+Bo80nlEEK2alytNf0a/q/5GMii6r4/U2kHqKAyaRS5y2rwWbGH2MITRK+Y
+      hnPZ7WQmfYX9vO8tWvX3ScAvhi1Xs0xG289UrdjS8ZCKh9H2M1YrzNI0LWuJlgFa+qJ97cbU
+      LBp+doy4INmD9wartfmQog19OIZII1CBoxogm7p0a5sBp2nMAXBDpwcsBe2vj7eTg83Ss1NW
+      lRzK9YYtj5P+VAGmeffgE+kFgG3XMopX1EHCNHyjALIoThhB9fjp+N95G86vF1GxGXRT78d/
+      CDBwOqaI1yl77Xfk+L+P+a5A7J++Tv5rmRDxFKYx/fj5XU76+1uIktL+R8scZNL2Q7tfaaMe
+      18rzWi5qn9Yqnp2mHTa1PG/U0n+7RKsuP7sZZ94qLSeu/XbS4h7SSvNsHb6tOJdcRelFWk0p
+      9pZLfx4m3EweHYyy4ygtRfM2o+/o6ebnnXZA741+gLf8BPMiSOBCaXKSKZQmgQulSeBCaRK4
+      UJoELpQmP+i5SNVzZ/b3FC6Kz/tr+nsK/Ur24EJpErhQmgQulCaBC6VJ4EJpErhQmgQulCaB
+      C6VJ4EJpErhQmgQulCaBC6VJ4EJpErhQmgQulCaBC6VJ4EJpErhQmgQulCaBC6X10X867syy
+      ej01Roiz+ujehJ1ZVq+nxvQu+V/1l5c+2ulFE/B1JglVFuIyMojLyCLh1Dr8zHXUv/oBNT06
+      Roiz+ugQpTPL6vXUGCHO6sMb/5y9z7U96wtKnnya8pOJBC5vWVavJ8cI0aQPA8+lZPpPltVL
+      b7usXk+OEaJJH94Av5r6777DWg3OnO8of+8janOC8Fm2nqFzWk4Oe2pML34WcpJ5Wem/FR7s
+      eRRNHULh5qmEWzYQFNKLY3qQBH556ZurKJ1ZVq+nxgjRRt8cg3dmWb2vemiMEG30TeDhw/E4
+      8ynlyV9S3uZhl1GPE/HZ0xh7cowQbfTpMXhnltXrqTG9RY7BLy99egN8nfcA3Lz7ZowQIP+a
+      UChOAhdKk8CF0iRwoTQJXCit+1dRtnzRA9PoY5Nu6+8ZiD4ie3ChNAlcKE0CF0qTwIXSJHCh
+      NAlcKE0CF0qTwIXSJHChNAlcKE0CF0qTwIXSJHChNAlcKE0CF0qTwIXSJHChNAlcKE0CF91k
+      pXHvxxTMvY2M2FgOx8Zy+MZ7KFhz4ic3SrVj27GUE6MGc1DnT/qo32PZUUK726rZS6hZ8RDH
+      os2k+Q/m8I0LKD9h7dbsJHDRTVsouHY2xat2Nwdtx/njKorvSCBr6dHWgB2bF5B5XTJnssDj
+      hmsgayWW60aSv7nllsAVVM4fSfYfPqHBPAn/30Tg/PEt8hOmUJTd9dlJ4KKbOrMw2CGKnngb
+      u3EqYQdOMOzbb4k7sBwvYx4VTyyjDuDQ3yhYkYfrgyuJTV3J4JWpxG1MRl+3Dcuiz3F0cXYS
+      uOimKHynDMO17f0ZWhYGi2xeGCx3K9WHQDc7iaCIpoG6iDkEzTbCoU1U5wKn8mgEfGZNb73V
+      g8vEJwieDNqaFKrtXZudBC56gB1HqQWbxUJ96t/JHzeF0pOJBL7cvDBY1lGsgCE2us0SM3o8
+      YkcAe7Bmnd1S48nTbbYbjufVZqg7hDW3azPr07vLClVdYGEwu42fv0d3HZodGH8zvsYVnEm+
+      jZy6JzFFekFxOuXfnOnWzCRw0QNC8HtxLYY2C4OdjN9O5cUsDOZzJ4M3Pkv27S9RlXwvVQCY
+      cDHVdWtmcogieoAPnjfMwH/GDAIXvEX0gQOEjsuieu4TlBYBkdEYAFuBpd2rbAU5wLUYIps+
+      1k9cTExJNfGFhcQVFhJfn0/4FMB4DZ5dXJ5GAhfd05mFwWLG4G0Gx/pNtCzMgX0XVestYJ6E
+      d0zb13qjN5txM5txzV1OyWrQzZxEV9c7kEMU0T2dWWCM8QQtHEtZ8ovkzvIk9IEhNPzjWUoz
+      wWPJw/gAkE3RrCQaxt3XtJ3iXZQsfgmrcQLm52bg2sXpSeCiezq5MJhH0joisseR//Z/c3It
+      gBG3+eu4Iqnl2MMHPTspTN7Uuh1dyHgGbFyLOabrmXZ/Eapf2N1lZRGqjnV2YTBnpQWH9efH
+      tD6PB65mU7ePoWUPLnpEZxcGczGZzxvthZ6/WHKSKZQmgQulSeBCaRK4UJoELpQmV1HEz1oT
+      OK6/p3DRZpZtb/ex7MGF0iRwoTQJXChNAhdKk8CF0iRwoTQJXChNAhdKk8CF0iRwoTQJXChN
+      AhdKk8CF0iRwoTQJXChNAhdKk8CF0iRwoTQJXChNAhdKk8CF0iRwoTQJXChNAhdKk8CF0iRw
+      oTQJXChNAhdKk8CF0iRwoTQJXChNAhdKk8CF0iRwoTQJXChNAhdKk8CF0v4fyhlADXXVOXkA
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Defects by Type' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='KPI ' width='192'>
+      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
+      lievCQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='147' name='Repair Cost by Defect Type' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
