@@ -32,10 +32,20 @@ Data-Driven Decisions: Enables management to act on insights
 # 🛠 Tools Used
 Tableau (Dashboard & Visualization)
 Excel / CSV (Data Source)
-PowerPoint (Project Presentation)
 
 # Conclusion:
 This Tableau dashboard provides actionable insights into manufacturing defects using data from September 2025 to November 2025. It highlights high-impact defect types, compares inspection methods, and visualizes trends that support strategic quality improvements and cost reduction decisions. By presenting defects, severity, repair costs, and monthly variations clearly, the dashboard enables stakeholders to prioritize issues and enhance manufacturing performance.
 
 # 👨‍💻 Author
 Ajmeera Anand Kumar
+
+---
+
+## 🚀 Live Interactive Dashboard
+This project includes a live, interactive web dashboard built with Python (Streamlit). 
+
+**How to run locally:**
+1. Open your terminal in the `python` folder.
+2. Install dependencies: `pip install streamlit plotly pandas numpy scikit-learn`
+3. Launch the dashboard: `streamlit run app.py`
+4. View it in your browser at: [http://localhost:8501](http://localhost:8501)
